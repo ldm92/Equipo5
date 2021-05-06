@@ -35,7 +35,7 @@ namespace Equipo5.Site.Controllers
 
             //TODO:
             //Esto se tiene que hacer con BD
-            if (model.Email == "admin@equipo5.com" && model.Password == "password")
+            if (model.Email == "admin@equipo5.com" && model.Password == "adminlppa")
             {
                 var claims = new[]
                 {

@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Equipo5.Site.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         public ActionResult Index()
