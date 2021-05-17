@@ -26,13 +26,15 @@ namespace Equipo5.Data.Services
 
         public void Delete(T entity)
         {
+            Db.Set<T>().Attach(entity);
             Db.Set<T>().Remove(entity);
             Db.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var entity = GetById(id);
+            this.Delete(entity);
         }
 
         public List<T> Get(Expression<Func<T, bool>> whereExpression = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderFunction = null, string includeModels = "")
@@ -59,8 +61,8 @@ namespace Equipo5.Data.Services
 
         public void Update(T entity)
         {
-            /*Db.Entry(entity).State = EntityState.Modified;
-            Db.SaveChanges();*/
+            Db.Entry(entity).State = EntityState.Modified;
+            Db.SaveChanges();
         }
 
         public List<ValidationResult> ValidateModel(T model)

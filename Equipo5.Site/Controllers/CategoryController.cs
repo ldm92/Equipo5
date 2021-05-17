@@ -43,19 +43,44 @@ namespace Equipo5.Site.Controllers
                 Console.WriteLine(e);
                 return View(model);
             }
-
-            /*
-            [HttpGet]
-            public ActionResult Edit(int id)
-            {
-                var biz = new CategoryBiz();
-                var model = biz.Buscar(id);
-                if (model == null)
-                    throw new Exception();
-
-                return View(model);
-            }*/
-
         }
+
+        
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var biz = new CategoryBiz();
+            var model = biz.Get(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Category model)
+        {
+            var biz = new CategoryBiz();
+            biz.Modificar(model);
+
+            return View(model);
+        }
+        
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            var biz = new CategoryBiz();
+            var model = biz.Get(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Category model)
+        {
+            var biz = new CategoryBiz();
+            biz.Eliminar(model);
+
+            return View(model);
+        }
+
     }
 }
