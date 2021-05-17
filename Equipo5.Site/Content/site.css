@@ -1,2 +1,170 @@
-﻿body {
+﻿/*
+    IMPORTANTE:
+    No modificar estos estilos
+*/
+
+
+ul, ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    border: none;
+}
+
+.articulo > p {
+    text-align: justify;
+}
+
+body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/*div {
+    background-color: aquamarine;
+    font-size: 24px;
+
+}
+
+p {
+     color: red;
+ }*/
+
+
+
+/*--------------  LAYOUT ------------*/
+
+#contenedor {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#cabecera, #menu, #contenido, #contenido #principal, #contenido #secundario, #pie {
+    border: 2px solid #777;
+}
+
+
+
+#contenido {
+    float: right;
+    width: 100%;
+}
+
+#contenido #principal {
+    float: left;
+    width: 75%;
+}
+
+#contenido #secundario {
+    float: right;
+    width: 20px;
+}
+
+#pie {
+    clear: both;
+}
+
+/*
+#cabecera #logo {
+    float: left;
+}
+*/
+#cabecera #buscador {
+    float: right;
+}
+
+
+#menu ul#menu_principal li {
+    display: inline;
+    float: left;
+    padding: 0 10px 0 0;
+}
+/*------------------------  IMPORTANTE  --------------------------
+    A partir de aca se pueden añadir estilos propios necesarios.
+-----------------------------------------------------------------*/
+
+#contenedor,
+#menu,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+    padding: .5em;
+    border: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+}
+#cabecera h1 {
+    background: url(logo.jpg) no-repeat 0px 0px;
+    width: 300px;
+    height: 200px;
+}
+#menu {
+    margin-bottom: .5em;
+   /* border-bottom: 1px solid #0000ff;*/
+}
+
+#contenido {
+    padding: 0;
+}
+
+#contenido #principal {
+    width: 75%;
+}
+
+#contenido #secundario {
+    width: 20%;
+    border: 1px solid #663399;
+}
+
+#pie {
+    padding: .5em 0;
+    margin-top: 1em;
+    border-top: 1px solid #c71585;
+    border-bottom: 1px solid #c71585;
+    background: antiquewhite;
+    text-align: center;
+}
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #663399;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #777777;
+}
+
+.table tr:hover {
+    background-color: beige;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: brown;
+    color: burlywood;
 }
