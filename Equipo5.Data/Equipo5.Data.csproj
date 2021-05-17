@@ -55,6 +55,10 @@
     <Compile Include="Migrations\202105060536339_AddCart.designer.cs">
       <DependentUpon>202105060536339_AddCart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105160634140_EditCategory.cs" />
+    <Compile Include="Migrations\202105160634140_EditCategory.designer.cs">
+      <DependentUpon>202105160634140_EditCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\Equipo5DbContext.cs" />
     <Compile Include="Migrations\202105060512314_InitialCreate.cs" />
     <Compile Include="Migrations\202105060512314_InitialCreate.designer.cs">
@@ -81,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105060536339_AddCart.resx">
       <DependentUpon>202105060536339_AddCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105160634140_EditCategory.resx">
+      <DependentUpon>202105160634140_EditCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

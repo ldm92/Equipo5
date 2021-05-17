@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryBiz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Equipo5.Data\Equipo5.Data.csproj">
+      <Project>{0571d33b-8406-4306-99f3-da3e54c797e5}</Project>
+      <Name>Equipo5.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Equipo5.Entities\Equipo5.Entities.csproj">
+      <Project>{E12BFE27-3DFA-453B-9CA4-8685B197199D}</Project>
+      <Name>Equipo5.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
